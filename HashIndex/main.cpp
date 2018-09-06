@@ -71,6 +71,7 @@ public:
 			deleteTree(current->rChild);
 		delete current;
 	}
+	
 	//保存二叉排序树
 	bool saveTree()
 	{
@@ -109,6 +110,7 @@ public:
 		out.close();
 		return true;
 	}
+	
 	//读取保存于外存的二叉排序树
 	bool readTree()
 	{
@@ -146,6 +148,7 @@ public:
 		return true;
 
 	}
+	
 	//读入块
 	myHashBlock*& readBlock(int bNUM)
 	{
@@ -183,6 +186,7 @@ public:
 		//返回解析完数据
 		return pB;
 	}
+	
 	//写出块
 	bool writeBlock(int bNUM,myHashBlock *pB)
 	{
@@ -617,6 +621,7 @@ public:
 		}
 	return true;
 	}
+	
 	//删除某一项数据
 	void deleteData(int current,myHashBlock *&pB)
 	{
@@ -627,6 +632,7 @@ public:
 		pB->CheckNUM--;
 		return ;
 	}
+	
 	//判断删除某一项以后，其父节点下两个节点是否可以合并
 	void checkCombine(myHashNode *parent)
 	{
