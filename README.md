@@ -1,4 +1,5 @@
-# C++ Implementation of the Dynamic Hash Indexes
-* This project is a C++ implementation of the dynamic hash indexes, which is useful in database implementation.
-	> * The traditional implementation uses a variable array to storage key-value pairs of the hash value and the buctet address. In order to further improve efficiency, this project uses binary sort tree to find out the buctet that storages the target data. The structure of a binary sort tree corresponds to the binary hash value, where 0(1) stands for left(right) node. Searching a binary tree is much faster than searching an array sequentially. Moreover, a variable array is rebuilded when a new bit is used to split the buctet into two new ones. The improvement of binary sort tree only builds two nodes when  a new bit is used to split the buctet, saving both time and space. 
-	> * The read and write operations of the binary sort tree in hard disk is implemented.
+# C++ Implementation of the Dynamic Hash Indexes and Nested Block Loop Join
+## The project of Dynamic-Hash-Indexes is a C++ implementation of the dynamic hash indexes.
+	* The traditional implementation uses a variable array to storage key-value pairs of the hash value and the buctet address. In order to further improve efficiency, this project uses binary sort tree to find out the buctet that storages the target data. The structure of a binary sort tree corresponds to the binary hash value, where 0(1) stands for left(right) node. Searching a binary tree is much faster than searching an array sequentially. Moreover, a variable array is rebuilded when a new bit is used to split the buctet into two new ones. The improvement of binary sort tree only builds two nodes when  a new bit is used to split the buctet, saving both time and space. 
+	* The read and write operations of the binary sort tree in hard disk is implemented.
+## The project of Nested Block Loop Join is a C++ implementation of the nested block loop join.
